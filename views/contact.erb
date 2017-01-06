@@ -1,0 +1,22 @@
+<h2>Contact Information:</h2>
+
+<h4>Name:</h4>
+<%= @contact_info[:name] %>
+
+<h4>Phone:</h4>
+<%= @contact_info[:phone] %>
+
+<h4>Address:</h4>
+<%= @contact_info[:address] %>
+
+<h4>E-Mail:</h4>
+<%= @contact_info[:email] %>
+<p></p>
+
+<div><a href="/">Back to Contact List</a></div>
+<div><a href="/<%= @contact_info[:name] %>/edit">Edit Contact</a></div>
+<div>
+  <form action="<%= @contact_info[:name] %>/deleted" method="post">
+    <button type="submit">Delete Contact</button>
+  </form>
+</div>

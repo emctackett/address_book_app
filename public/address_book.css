@@ -1,0 +1,36 @@
+h1.heading {
+  font-family: cursive;
+  color: #4682B4;
+  text-decoration: underline;
+}
+
+body {
+  font-family: arial;
+  color: #696969;
+}
+
+form {
+  font-family: arial;
+  color: #696969;
+}
+
+a {
+  font-family: arial;
+  color: #696969;
+  text-decoration: none;
+}
+
+p.message {
+  background-color: #2F4F4F;
+  color: #DCDCDC;
+  padding: 10px;
+}
+
+h2 {
+  text-decoration: underline;
+  color: #2F4F4F;
+}
+
+button {
+  padding: 10px;
+}

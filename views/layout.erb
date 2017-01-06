@@ -1,0 +1,19 @@
+<html>
+  <title>Address Book</title>
+  <link href="/address_book.css" rel="stylesheet" type="text/css" />
+  <body>
+    <% if session[:error] %>
+      <div>
+        <p class="message"><%= session.delete(:error) %></p>
+      </div>
+    <% end %>
+
+    <% if session[:success] %>
+      <div>
+        <p class="message"><%= session.delete(:success) %></p>
+      </div>
+    <% end %>
+
+    <%== yield %>
+  </body>
+</html>

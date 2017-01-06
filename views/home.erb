@@ -1,0 +1,30 @@
+<h1 class="heading">Address Book</h1>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <li>
+      <a href="/<%= contact[:name] %>"><%= contact[:name] %></a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/new">+Add New Contact+</a>
+
+<p>
+  <% if params[:sort] == "desc" %>
+    <a href="/">Sort Ascending</a>
+  <% else %>
+    <a href="/?sort=desc">Sort Descending</a>
+  <% end %>
+</p>
+
+<% if session[:username] %>
+  <form action='/users/signout' method='post'>
+    <p>
+      <button type='submit'>Sign Out</button>
+      Signed in as <%= session[:username] %>
+    </p>
+  </form>
+<% else %>
+  <p><a href="/users/signin">Sign In</a></p>
+<% end %>

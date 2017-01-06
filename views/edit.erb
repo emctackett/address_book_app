@@ -1,0 +1,19 @@
+<h3>Editing <%= @contact_info[:name] %>'s Contact Information:</h3>
+
+<form action="/<%= @contact_info[:name] %>/edit" method="post">
+
+  <label for="phone">Phone Number:</label>
+  <div><input name="phone" placeholder="Phone" value="<%= @contact_info[:phone] %>" /></div>
+
+  <label for="address">Address:</label>
+  <div><input name="address" placeholder="Address" value="<%= @contact_info[:address] %>" /></div>
+
+  <label for="email">E-mail Address:</label>
+  <div><input name="email" placeholder="E-mail" value="<%= @contact_info[:email] %>" /></div>
+
+  <div>
+    <button type="submit">Save</button>
+  </div>
+</form>
+
+<a href="/">Cancel</a>
