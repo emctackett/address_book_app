@@ -5,7 +5,7 @@ GEM
     bcrypt (3.1.11)
     erubis (2.7.0)
     multi_json (1.12.1)
-    puma (3.6.2)
+    puma (3.12.6)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
